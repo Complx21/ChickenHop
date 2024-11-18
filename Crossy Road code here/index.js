@@ -1295,18 +1295,18 @@ const handleTouchMove = evt =>{
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
         if (xDiff > 0) {
             if (chicken)
-                chicken.jump("a");
+                chicken.jump("left");
         } else {
             if (chicken)
-                chicken.jump("d");
+                chicken.jump("right");
         }
     } else {
         if (yDiff > 0) {
             if (chicken)
-                chicken.jump("w");
+                chicken.jump("up");
         } else {
             if (chicken)
-                chicken.jump("s");
+                chicken.jump("down");
         }
     }
     xDown = null;
